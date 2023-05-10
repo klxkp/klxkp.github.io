@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ 
+body {
+    color: rgb(0, 0, 0);
+    font-family: 楷体;
+    background-color: rgb(218, 202, 202);
+}
+ 
+.header {
+    width: 100%;
+    height: 150px;
+}
+ 
+#hi1 {
+    width: 100%;
+    height: 150px;
+}
+ 
+.dh ul {
+    margin-bottom: 30px;
+    padding: 0px;
+    width: 1400px;
+    height: 30px;
+}
+ 
+.dh ul li {
+    height: 30px;
+    width: 16.45%;
+    list-style: none;
+    float: left;
+    display: inline;
+    font: 0.9em;
+}
+ 
+.dh ul li a {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(87, 156, 241);
+    line-height: 40px;
+    border-bottom: 1px solid rgb(168, 164, 172);
+}
+ 
+.dh ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(37, 84, 155);
+    border-bottom: 3px solid rgb(16, 4, 28);
+}
+ 
+.footer {
+    margin-top: 10px;
+    clear: both;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(87, 156, 241);
+    color: rgb(28, 41, 99);
+    font: italic 14px/20px 宋体;
+    text-align: center;
+}
+ 
+.footer p {
+    margin-top: 10px;
+}
+ 
+#fi1 {
+    width: 100px;
+    height: 70px;
+    float: right;
+    padding: 0px;
+}
+ 
+#zhuti {
+    margin: 10px 300px 0px 300px;
+    background-color: blueviolet;
+ 
+}
+ 
+#left {
+    width: 28.5%;
+    padding: 5px;
+    height: 600px;
+    float: left;
+    background-color: rgb(218, 202, 202);
+ 
+}
+ 
+#geqian h2 {
+    margin: 30px 0px 0px 0px;
+    padding: 10px;
+    height: 100px;
+}
+ 
+#right {
+    width: 60%;
+    height: 565px;
+    background-color: rgb(218, 202, 202);
+    float: left;
+    border: 0px double rgb(64, 151, 120);
+    margin: 20px 0px 50px 50px;
+    box-shadow: 20px 20px 25px 10px #242443;
+    border-radius: 100px;
+}
+ 
+#shijian {
+    text-align: center;
+    margin: 90px 0px 0px 0px;
+    height: 150px;
+}
+ 
+#ri {
+    font-size: 45px;
+    margin: 0px 0px 5px 0px;
+}
+ 
+#nianyue {
+    font-size: 20px;
+}
+ 
+#tt {
+    margin-top: 5px;
+}
+ 
+table {
+    border-color: rgb(64, 151, 120);
+}
+ 
+#xinxi {
+    height: 200px;
+}
+ 
+#zhan1 {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+}
+ 
+#zhan2 {
+    font-size: large;
+    width: 60%;
+    margin: 40px 10px 0px 70px;
+}
+ 
+#zhan2 ul li {
+    height: 30px;
+    font: 0.9em;
+}
+ 
+#tuijian {
+    margin: 10px 0px 0px 30px;
+}
+ 
+#shu {
+    margin-left: 30px;
+}
+ 
+#zong {
+    margin-top: 80px;
+}
+ 
+#zongyi {
+    margin: 10px 0px 0px 30px;
+}
+ 
+#qita {
+    margin-top: 250px;
+}

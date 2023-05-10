@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ 
+body {
+    color: rgb(0, 0, 0);
+    font-family: 楷体;
+    background-color: rgb(218, 202, 202);
+}
+ 
+.header {
+    width: 100%;
+    height: 150px;
+}
+ 
+#hi1 {
+    width: 100%;
+    height: 150px;
+}
+ 
+.dh ul {
+    margin-bottom: 30px;
+    padding: 0px;
+    width: 1400px;
+    height: 30px;
+}
+ 
+.dh ul li {
+    height: 30px;
+    width: 16.45%;
+    list-style: none;
+    float: left;
+    display: inline;
+    font: 0.9em;
+}
+ 
+.dh ul li a {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(87, 156, 241);
+    line-height: 40px;
+    border-bottom: 1px solid rgb(168, 164, 172);
+}
+ 
+.dh ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(37, 84, 155);
+    border-bottom: 3px solid rgb(16, 4, 28);
+}
+ 
+.footer {
+    margin-top: 10px;
+    clear: both;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(87, 156, 241);
+    color: rgb(28, 41, 99);
+    font: italic 14px/20px 宋体;
+    text-align: center;
+}
+ 
+.footer p {
+    margin-top: 10px;
+}
+ 
+#fi1 {
+    width: 100px;
+    height: 70px;
+    float: right;
+    padding: 0px;
+}
+ 
+#main {
+    font-size: large;
+    color: rgb(6, 2, 69);
+    margin: 30px 300px 30px 300px;
+}
+ 
+#tijiao {
+    margin-top: 20px;
+    text-align: center;
+}
+ 
+#tijiao input {
+    width: 100px;
+    height: 35px;
+    background-color: rgb(99, 150, 134);
+}
+ 
+fieldset {
+    padding: 20px;
+}

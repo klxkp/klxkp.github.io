@@ -1,0 +1,388 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ 
+body {
+    color: aliceblue;
+    font-family: 楷体;
+    background-color: rgb(235, 225, 225);
+}
+ 
+.header {
+    width: 100%;
+    height: 150px;
+}
+ 
+#hi1 {
+    width: 100%;
+    height: 150px;
+}
+ 
+.dh ul {
+    margin-bottom: 30px;
+    padding: 0px;
+    height: 30px;
+    width: 1400px;
+}
+ 
+.dh ul li {
+    height: 30px;
+    width: 16.45%;
+    list-style: none;
+    float: left;
+    display: inline;
+    font: 0.9em;
+}
+ 
+.dh ul li a {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(87, 156, 241);
+    line-height: 40px;
+    border-bottom: 1px solid rgb(168, 164, 172);
+}
+ 
+.dh ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(37, 84, 155);
+    border-bottom: 3px solid rgb(16, 4, 28);
+}
+ 
+.footer {
+    clear: both;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(87, 156, 241);
+    color: rgb(28, 41, 99);
+    font: italic 14px/20px 宋体;
+    text-align: center;
+}
+ 
+.footer p {
+    margin-top: 10px;
+}
+ 
+#fi1 {
+    width: 100px;
+    height: 70px;
+    float: right;
+    padding: 0px;
+}
+ 
+.zhuti {
+    margin: 10px 150px 0px 150px;
+    background-color: burlywood;
+}
+ 
+#zhutiright {
+    width: 25%;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+}
+ 
+#d1 {
+    font-family: 黑体;
+    font-size: 100%;
+    color: white;
+    float: left;
+    background-color: rgb(134, 16, 16);
+    width: 100px;
+    height: 20px;
+    padding: 5px 5px;
+    margin: 4px;
+}
+ 
+#d2 {
+
+    clear: both;
+}
+ 
+#zhutiright ul li {
+    list-style-type: none;
+}
+ 
+#zhutiright ul {
+    margin: 0px;
+    padding: 15px 10px 15px 10px;
+}
+ 
+#zhutiright ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+    border-bottom: 1px dashed black;
+    padding: 0px 0px 0px 0px;
+}
+ 
+#zhutiright span {
+    float: right;
+}
+ 
+#zhutileft {
+    width: 50%;
+    height: 400px;
+    background-color: aquamarine;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+ 
+}
+ 
+#photo {
+    display: block;
+    width: 3045px;
+    height: 400px;
+    animation: bj 8s linear infinite;
+}
+ 
+#photo img {
+    float: left;
+    width: 609px;
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+}
+ 
+
+@keyframes bj {
+ 
+    0%,
+    20% {
+        margin-left: 0px;
+    }
+ 
+    25%,
+    40% {
+        margin-left: -609px;
+    }
+ 
+    45%,
+    60% {
+        margin-left: -1218px;
+    }
+ 
+    65%,
+    80% {
+        margin-left: -1827px;
+    }
+ 
+    85%,
+    100% {
+        margin-left: -2436px;
+    }
+}
+ 
+#zhutimain {
+    width: 25%;
+    height: 400px;
+    background-color: rgb(201, 199, 206);
+    float: left;
+    text-align: center;
+}
+ 
+#zhutimain img {
+    border-radius: 5px;
+    width: 250px;
+    height: 160px;
+    margin: 8px 0px 0px 0px;
+}
+ 
+#zhutimain img:hover {
+    transform: scale(1.2);
+}
+ 
+#zhutimain h4 {
+    color: brown;
+}
+ 
+#zhutimain a {
+    text-decoration: none;
+    color: rgb(16, 159, 21);
+}
+ 
+#zhutimain a:hover {
+    color: rgb(120, 8, 109);
+}
+ 
+#zhutimain p {
+    margin: 3px 5px 0px 5px;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+ 
+#bottom {
+    width: 100%;
+    height: 300px;
+    background-color: blueviolet;
+    clear: both;
+}
+ 
+#meishi1 {
+    float: left;
+    width: 24%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: solid;
+}
+ 
+#meishi1 img {
+    border-radius: 5px;
+    width: 250px;
+    height: 160px;
+    margin: 8px 0px 0px 0px;
+}
+ 
+#meishi1 img:hover {
+    transform: scale(1.2);
+}
+ 
+#meishi1 h4 {
+    color: brown;
+}
+ 
+#meishi1 a {
+    text-decoration: none;
+    color: rgb(16, 159, 21);
+}
+ 
+#meishi1 a:hover {
+    color: rgb(120, 8, 109);
+}
+ 
+#meishi1 p {
+    margin: 3px 5px 0px 5px;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+ 
+#meishi2 {
+    float: left;
+    width: 25%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: solid;
+    border-left: none;
+}
+ 
+#meishi2 img {
+    border-radius: 5px;
+    width: 250px;
+    height: 160px;
+    margin: 8px 0px 0px 0px;
+}
+ 
+#meishi2 img:hover {
+    transform: scale(1.2);
+}
+ 
+#meishi2 h4 {
+    color: brown;
+}
+ 
+#meishi2 a {
+    text-decoration: none;
+    color: rgb(16, 159, 21);
+}
+ 
+#meishi2 a:hover {
+    color: rgb(120, 8, 109);
+}
+ 
+#meishi2 p {
+    margin: 3px 5px 0px 5px;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+ 
+#meishi3 {
+    float: left;
+    width: 25%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: solid;
+    border-left: none;
+}
+ 
+#meishi3 img {
+    border-radius: 5px;
+    width: 250px;
+    height: 160px;
+    margin: 8px 0px 0px 0px;
+}
+ 
+#meishi3 img:hover {
+    transform: scale(1.2);
+}
+ 
+#meishi3 h4 {
+    color: brown;
+}
+ 
+#meishi3 a {
+    text-decoration: none;
+    color: rgb(16, 159, 21);
+}
+ 
+#meishi3 a:hover {
+    color: rgb(120, 8, 109);
+}
+ 
+#meishi3 p {
+    margin: 3px 5px 0px 5px;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+ 
+#meishi4 {
+    float: left;
+    width: 25%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: solid;
+    border-left: none;
+}
+ 
+#meishi4 img {
+    border-radius: 5px;
+    width: 250px;
+    height: 160px;
+    margin: 8px 0px 0px 0px;
+}
+ 
+#meishi4 img:hover {
+    transform: scale(1.2);
+}
+ 
+#meishi4 h4 {
+    color: brown;
+}
+ 
+#meishi4 a {
+    text-decoration: none;
+    color: rgb(16, 159, 21);
+}
+ 
+#meishi4 a:hover {
+    color: rgb(120, 8, 109);
+}
+ 
+#meishi4 p {
+    margin: 3px 5px 0px 5px;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
