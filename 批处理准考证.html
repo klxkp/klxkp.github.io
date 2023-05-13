@@ -9,11 +9,11 @@ dpath = r'E:\pycode\批处理后'   #我选择保存到其他盘<br>
 wb = openpyxl.load_workbook(xlpath)<br>
 ws = wb['Sheet1']<br>
 for index, rows in enumerate(ws.rows):<br>
-    if index == 0 or index == 1:<br>
-        continue<br>
-    else:<br>
-        dt = DocxTemplate(r'准考证模板.docx')<br>
-        dic = {}<br>
+&nbsp&nbsp&nbsp&nbspif index == 0 or index == 1:<br>
+&nbsp&nbspcontinue<br>
+&nbspelse:<br>
+&nbsp&nbsp&nbsp&nbspdt = DocxTemplate(r'准考证模板.docx')<br>
+&nbsp&nbsp&nbsp&nbspdic = {}<br>
         dic['name']= rows[0].value<br>
         dic['sex']= rows[1].value<br>
         dic['date']= rows[2].value<br>
