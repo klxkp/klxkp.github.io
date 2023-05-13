@@ -1,0 +1,25 @@
+from docxtpl import DocxTemplate
+import openpyxl
+from os.path import join
+
+#建议将execl、准考证模板放到pt文件同一目录下
+xlpath = r'考生考试信息表.xlsx'
+path = r'E:\pycode\批处理Word\考生照片'
+dpath = r'E:\pycode\批处理后'   #我选择保存到其他盘
+wb = openpyxl.load_workbook(xlpath)
+ws = wb['Sheet1']
+for index, rows in enumerate(ws.rows):
+    if index == 0 or index == 1:
+        continue
+    else:
+        dt = DocxTemplate(r'准考证模板.docx')
+        dic = {}
+        dic['name']= rows[0].value
+        dic['sex']= rows[1].value
+        dic['date']= rows[2].value
+        dic['time']= rows[3].value
+        dt.render(dic)
+        pictname = join(path, (rows[0].value + '.jpg'))
+        zp = dt.tables[0].cell(0, 4).paragraphs[0].add_run().add_picture(pictname)
+        dsavepath = join(dpath, (rows[0].value + '准考证.docx'))
+        dt.save(dsavepath)
