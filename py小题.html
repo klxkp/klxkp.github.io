@@ -1,0 +1,19 @@
+import random<br>
+<br>
+<br>
+print("==========第一题，不重复随机数==========")<br>
+n = eval(input("请输入正整数n:"))<br>
+lst1 = random.sample(range(1, 5 * n + 1), n)<br>
+print("产生随机数为：", lst1)<br>
+lst2 = [i for i in lst1 if i % 2 == 0]<br>
+print("其中偶数有：", lst2)<br>
+<br>
+print("==========第二题，切片排序==============")<br>
+lst = [random.randint(0, 20) for i in range(20)]<br>
+print(lst)<br>
+a = lst[0:10]<br>
+a.sort()<br>
+b = lst[10:]<br>
+b.sort(reverse=True)<br>
+lst = a + b<br>
+print(lst)<br><br>
