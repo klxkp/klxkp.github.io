@@ -1,0 +1,38 @@
+import jieba<br>
+import wordcloud<br>
+from PIL import Image<br>
+import numpy as np<br>
+<br>
+<br>
+jieba.setLogLevel(jieba.logging.INFO)<br>
+file_name = r'e:\pycode\《魁拔之书》.txt'<br>
+with open(file_name, 'r', encoding='utf-8') as fp:<br>
+    s = fp.read()<br>
+excludes = {"我们", "这样", "自己", "一个", "他们", "没有", "什么", "已经", "一直",<br>
+            "知道", "可以", "之后", "就是", "开始", "一些", "认为", "成为", "这个"}<br>
+s = jieba.lcut(s)<br>
+res = {}<br>
+for word in s:<br>
+    if len(word) == 1:<br>
+        continue<br>
+    elif word == "长老":<br>
+        word = "爪云王子"<br>
+    elif word == "奇衡":<br>
+        word = "奇衡三"<br>
+    res[word] = res.get(word, 0) + 1<br>
+for i in excludes:<br>
+    del res[i]<br>
+res = list(res.items())<br>
+res.sort(key=lambda x: x[1], reverse=True)<br>
+str = ''<br>
+for i in range(18):<br>
+    word, count = res[i]<br>
+    str = str + ''.join(word) + ' '<br>
+mk = np.array(Image.open(r"E:\pycode\kb.png"))<br>
+wc = wordcloud.WordCloud()<br>
+<br>
+wc.generate(str)<br>
+wc.to_file(r"E:\pycode\demo3.png")<br>
+img = Image.open(r"E:\pycode\demo3.png")<br>
+img.show()<br>
+<br>
